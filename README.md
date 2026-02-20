@@ -41,14 +41,6 @@
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 </p>
 
----
-
-### 📊 GitHub Analytics
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JummyIO&show_icons=true&theme=radical&rank_icon=github&display_format=github-light-dark" alt="JummyIO's Stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JummyIO&layout=compact&theme=radical&display_format=github-light-dark" alt="Top Languages" />
-</div>
 
 ---
 
