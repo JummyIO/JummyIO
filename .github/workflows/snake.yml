@@ -1,12 +1,9 @@
 name: Generate Snake
 
 on:
-  # Chạy tự động vào nửa đêm
   schedule:
     - cron: "0 0 * * *" 
-  # Chỗ này để sếp thích thì tự bấm nút chạy bằng tay luôn cho máu
   workflow_dispatch:
-  # Tự chạy khi sếp có code mới đẩy lên nhánh main
   push:
     branches:
     - main
@@ -16,8 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     
+    # 🔑 Phải có cái này để đẩy ảnh lên nhánh 'output' không bị lỗi 403
+    permissions:
+      contents: write
+    
     steps:
-      # Hành động sinh ra con rắn múp míp
+      # Bước này quan trọng để con bot thấy thư mục để làm việc
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
       - name: Generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
@@ -28,7 +32,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
-      # Đẩy cái ảnh con rắn đó lên một nhánh mới tên là 'output' để cất giữ
       - name: Push to GitHub
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
