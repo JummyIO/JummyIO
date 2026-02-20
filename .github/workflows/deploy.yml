@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Hoặc branch chính của sếp là master thì đổi lại nhé
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    # 🔑 Đoạn này là "thượng phương bảo kiếm" để fix lỗi 403 nè sếp!
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Sếp có thể đổi version tùy ý nhé
+
+      - name: Install and Build 🏗️
+        run: |
+          npm install
+          npm run build # Đảm bảo lệnh này tạo ra thư mục 'dist'
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output # Branch mà sếp muốn đẩy code đã build vào
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
