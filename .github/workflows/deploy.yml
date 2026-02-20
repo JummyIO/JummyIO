@@ -3,27 +3,39 @@ name: Deploy 🚀
 on:
   push:
     branches:
-      - main # Hoặc master tùy sếp nhé
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    # Thêm đoạn này để bảo chứng "nhân phẩm" cho con bot
     permissions:
-      contents: write
-      pages: write
-      id-token: write
+      contents: write # Quyền hạn đã fix ở bước trước, sếp giữ nguyên nhé!
 
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      # (Các bước build của sếp ở đây, ví dụ npm install && npm run build)
+      # 1️⃣ Bước này cực quan trọng: Cài đặt môi trường
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
 
-      - name: Deploy to GitHub Pages 🏗️
+      # 2️⃣ Bước này để "đẻ" ra cái thư mục dist nè sếp!
+      - name: Install and Build 🏗️
+        run: |
+          npm install
+          npm run build  # <--- Lệnh này phải tạo ra thư mục 'dist' nhé sếp
+
+      # 3️⃣ Kiểm tra xem thư mục dist có thật không (để tớ soi hộ sếp cho chắc)
+      - name: Check if dist exists 🔍
+        run: ls -la dist
+
+      # 4️⃣ Giờ mới gọi con bot ra "ship" hàng
+      - name: Deploy to GitHub Pages 🚀
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
-          build_dir: dist
+          build_dir: dist # Con bot sẽ bê nguyên cái đống trong này đi
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Dùng đúng cái này, không cần tạo cái khác đâu sếp!
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
