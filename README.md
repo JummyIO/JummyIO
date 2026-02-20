@@ -46,8 +46,8 @@
 ### 📊 GitHub Analytics
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JummyIO&show_icons=true&theme=radical&hide_border=true&title_color=2F80ED&text_color=434D56&icon_color=2F80ED" alt="JummyIO's GitHub Stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JummyIO&layout=compact&theme=radical&hide_border=true&title_color=2F80ED&text_color=434D56" alt="Top Languages" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JummyIO&show_icons=true&theme=radical&rank_icon=github&display_format=github-light-dark" alt="JummyIO's Stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JummyIO&layout=compact&theme=radical&display_format=github-light-dark" alt="Top Languages" />
 </div>
 
 ---
