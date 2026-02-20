@@ -1,34 +1,38 @@
-name: Deploy to GitHub Pages
+name: Generate Snake
 
 on:
+  # Chạy tự động vào nửa đêm
+  schedule:
+    - cron: "0 0 * * *" 
+  # Chỗ này để sếp thích thì tự bấm nút chạy bằng tay luôn cho máu
+  workflow_dispatch:
+  # Tự chạy khi sếp có code mới đẩy lên nhánh main
   push:
     branches:
+    - main
 
 jobs:
-  build-and-deploy:
+  generate:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-
+    timeout-minutes: 10
+    
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js ⚙️
-        uses: actions/setup-node@v4
+      # Hành động sinh ra con rắn múp míp
+      - name: Generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
         with:
-          node-version: '20' 
-
-      - name: Install and Build 🏗️
-        run: |
-          npm install
-          npm run build
-
-      - name: Deploy to GitHub Pages 🚀
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      # Đẩy cái ảnh con rắn đó lên một nhánh mới tên là 'output' để cất giữ
+      - name: Push to GitHub
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output 
+          target_branch: output
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
