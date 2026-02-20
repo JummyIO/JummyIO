@@ -1,47 +1,73 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=JummyIO%20&fontSize=80&animation=fadeIn&fontAlignY=35&desc=Vibe%20Coding%20Overlord&descSize=25&descAlignY=60" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&height=280&section=header&text=JummyIO&fontSize=90&animation=twinkling&fontAlignY=40&desc=Vibe%20Coding%20Overlord%20•%20Software%20Architect&descSize=24&descAlignY=65" width="100%" />
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&pause=1000&color=2F80ED&center=true&vCenter=true&width=500&lines=Architecting+the+Future;Software+Design+Expert;Vibe+Coding+Philosophy;AI+Integration)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&pause=1000&color=F7DF1E&center=true&vCenter=true&width=600&lines=Building+Scalable+Architectures;Spreading+Vibe+Coding+Magic;AI+Integration+Specialist;Turning+Coffee+into+Clean+Code)](https://git.io/typing-svg)
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=JummyIO&label=SYSTEM%20ACCESS&color=2F80ED&style=flat-square" alt="Views" />
 
 ---
 
-### 🪐 The Architect's Universe
+</div>
 
-<p align="left">
-<i>"Crafting elegant solutions, architecting scalable systems, and setting the coding vibe."</i>
-</p>
+### 🌌 MISSION LOG: THE ARCHITECT
 
-- 🔭 **Current Mission:** Architecting high-performance systems and spreading the Vibe Coding philosophy.
-- 🌱 **Learning Lab:** Advanced Cloud Architecture, System Design, and AI Integration.
-- 👯 **Synergy:** Looking for innovative open-source projects that make a real impact.
-- 💬 **Inquiry:** System Architecture, Clean Code practices, and workflow automation.
-- 📫 **Direct Signal:** thaiduyffvn@gmail.com
+<table border="0">
+ <tr>
+  <td width="50%" valign="top">
+
+**🚀 Status: ACTIVE**
+- 🔭 **Current Ops:** Architecting high-performance systems.
+- 🌱 **Learning Lab:** Cloud Native, System Design, AI.
+- 👯 **Synergy:** Open for high-impact collaborations.
+- 💬 **Ask me:** Anything about Code & Vibe.
+
+  </td>
+  <td width="50%" valign="top">
+
+**📬 Transmission**
+- 📧 **Signal:** [thaiduyffvn@gmail.com](mailto:thaiduyffvn@gmail.com)
+- 🏢 **Origin:** Vietnam 🇻🇳
+- ⚡ **Fun Fact:** Vibe coding is not a skill, it's a lifestyle.
+
+  </td>
+ </tr>
+</table>
 
 ---
 
-### 🛠️ Tech Stack (Premium Edition)
-
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=js,ts,py,go,react,nodejs,nextjs,docker,aws,git&theme=dark" />
-</p>
-
----
-
-### 📊 System Performance (Analytics)
+### 🛠️ ARSENAL (3D TECH STACK)
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=JummyIO&show_icons=true&theme=tokyonight&hide_border=true&title_color=2F80ED&icon_color=2F80ED" height="170px" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JummyIO&layout=compact&theme=tokyonight&hide_border=true&title_color=2F80ED" height="170px" />
-  <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=JummyIO&theme=tokyonight&hide_border=true" width="100%" />
+  <img src="https://skillicons.dev/icons?i=js,ts,py,go,react,nextjs,nodejs,docker,aws,git,github,vscode,linux,postman,mongodb&perline=5" />
 </div>
 
 ---
 
-### 🐍 Contribution Rhythm
+### 📊 ANALYTICS DASHBOARD
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <td>
+        <img height="180em" src="https://github-readme-stats.vercel.app/api?username=JummyIO&show_icons=true&theme=radical&hide_border=true&title_color=2F80ED&icon_color=2F80ED&text_color=ffffff" alt="JummyIO Stats" />
+      </td>
+      <td>
+        <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JummyIO&layout=compact&theme=radical&hide_border=true&title_color=2F80ED&text_color=ffffff" alt="Top Languages" />
+      </td>
+    </tr>
+  </table>
+  
+  <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=JummyIO&theme=radical&hide_border=true&stroke=2F80ED&ring=F7DF1E&fire=F7DF1E" alt="GitHub Streak" />
+</div>
+
+---
+
+### 🐍 CONTRIBUTION RHYTHM
 
 <div align="center">
   <picture>
@@ -51,6 +77,10 @@
   </picture>
 </div>
 
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<br/>
 
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=2F80ED&height=30&section=footer" width="100%" />
 </div>
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
